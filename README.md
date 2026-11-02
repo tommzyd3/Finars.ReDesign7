@@ -1,29 +1,37 @@
 # FIN ARS – Redesign spletne strani
 
-Sodoben, sofisticiran in popolnoma odziven (responsive) redesign spletne strani za **FIN ARS d.o.o.** – Center za arhitekturo, gradbeno projektiranje in druge storitve.
+Sodoben, sofisticiran in popolnoma odziven redesign spletne strani za **FIN ARS d.o.o.** – Center za arhitekturo, gradbeno projektiranje in druge storitve.
+
+**GitHub:** https://github.com/tommzyd3/Finars.ReDesign7
 
 ## Značilnosti
 
-- **Elegantna barvna shema**: temno ozadje z toplimi zlato-medenimi poudarki
-- **Tipografija**: Cormorant Garamond (naslovi) + Inter (telo)
-- **Popolnoma responsive**: deluje odlično na telefonih, tablicah in desktop računalnikih
-- **Sekcije**: Hero, O nas, Storitve, Projekti (z filtri), Ekipa, Kontakt
-- **Interakcije**: sticky header, mobilni meni, animacije ob scrollu, filtri projektov, kontaktni obrazec
+- Elegantna temna barvna shema z zlato-medenimi poudarki
+- Tipografija: Cormorant Garamond + Inter
+- Popolnoma responsive (mobilni, tablica, desktop)
+- **Večjezičnost SI / EN** (preklopnik v glavi)
+- Galerija projektov z resničnimi arhitekturnimi fotografijami (Unsplash)
+- Filtri projektov (stanovanjsko / poslovno / javno)
+- Sticky header, mobilni meni, animacije ob scrollu
+- Kontaktni obrazec
 
-## Kako uporabiti
+## Datoteke
 
-1. Odprite `index.html` v brskalniku (ali naložite celotno mapo na strežnik).
-2. Datoteke:
-   - `index.html` – struktura
-   - `styles.css` – stil
-   - `script.js` – interaktivnost
+- `index.html` – struktura
+- `styles.css` – stil
+- `script.js` – interaktivnost
+- `i18n.js` – prevodi SI/EN
 
-## Kontaktni podatki (vključeni)
+## Kako zagnati
 
-- Naslov: Podvine 36, 1410 Zagorje ob Savi
-- Telefon: 03 566 05 46 / 041 686 959
-- E-pošta: info@finars.si
+Odprite `index.html` v brskalniku ali naložite mapo na strežnik / GitHub Pages.
+
+## Kontakt podjetja
+
+- Podvine 36, 1410 Zagorje ob Savi
+- 03 566 05 46 / 041 686 959
+- info@finars.si
 
 ---
 
-Pripravljeno kot predlog modernizacije obstoječe strani www.finars.si
+Predlog modernizacije strani www.finars.si

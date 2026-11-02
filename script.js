@@ -1,5 +1,3 @@
-// FIN ARS – Interactive behaviors
-
 document.addEventListener('DOMContentLoaded', () => {
   const header = document.getElementById('header');
   const menuToggle = document.getElementById('menuToggle');
@@ -7,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('.nav-link');
   const contactForm = document.getElementById('contactForm');
 
-  // Sticky header on scroll
   const handleScroll = () => {
     if (window.scrollY > 40) {
       header.classList.add('scrolled');
@@ -15,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('scrolled');
     }
 
-    // Active nav link based on section
     const sections = document.querySelectorAll('section[id]');
     let current = '';
     sections.forEach(section => {
@@ -35,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', handleScroll, { passive: true });
   handleScroll();
 
-  // Mobile menu
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     nav.classList.toggle('open');
@@ -50,13 +45,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Contact form (demo – no backend)
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      btn.textContent = 'Sporočilo poslano ✓';
+      const isEn = document.documentElement.lang === 'en';
+      btn.textContent = isEn ? 'Message sent ✓' : 'Sporočilo poslano ✓';
       btn.disabled = true;
       btn.style.background = '#4a7c59';
 
@@ -69,7 +64,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Project filters
   const filterBtns = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -89,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Smooth reveal on scroll (simple intersection observer)
   const observerOptions = {
     threshold: 0.12,
     rootMargin: '0px 0px -40px 0px'
@@ -111,7 +104,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealObserver.observe(el);
   });
 
-  // Add revealed class styles via JS (inline for simplicity)
   const style = document.createElement('style');
   style.textContent = `
     .revealed {
